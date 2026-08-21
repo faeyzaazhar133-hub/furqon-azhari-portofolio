@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-20">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furqon Azhari - Power Systems & Generator Specialist</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            base: '#0f172a',
+                            card: '#1e293b',
+                            primary: '#0ea5e9',
+                            accent: '#38bdf8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #090d16;
+            color: #f1f5f9;
+        }
+
+        /* Glassmorphism Effect */
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 0 25px rgba(99, 102, 241, 0.15);
+        }
+
+        /* Subtle Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f43f5e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen selection:bg-indigo-500 selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-white/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#hero" class="flex items-center gap-3.5 group">
+                    <div class="h-11 flex items-center justify-center overflow-hidden transition-transform group-hover:scale-105">
+                        <img src="https://www.industrialmarinepower.com/img/ptpelican-mitra-sejati-batam_234.PNG" alt="PT Pelican Mitra Sejati Batam Logo" class="h-full w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="w-full h-full hidden items-center justify-center text-sky-400 font-bold font-mono text-xs">PA</div>
+                    </div>
+                    <span class="font-bold text-lg tracking-wide text-white">Furqon Azhari</span>
+                </a>
+
+                <nav class="hidden md:flex items-center gap-8 font-mono text-xs text-slate-300">
+                    <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                    <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+                    <a href="#skills" class="hover:text-sky-400 transition-colors">Expertise</a>
+                    <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+                </nav>
+
+                <div class="flex items-center gap-3">
+                    <a href="#contact" class="px-4 py-2 rounded-xl text-xs font-mono font-bold bg-sky-600 hover:bg-sky-500 text-white transition-all shadow-lg shadow-sky-600/30">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-36 pb-24 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-600/10 rounded-full blur-[160px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-white/10 text-sky-300 text-xs font-mono uppercase mb-6 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
+                Available for power systems projects & consultation
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white mb-6 max-w-4xl mx-auto leading-tight">
+                Mastering electrical power with <span class="gradient-text">reliability & precision</span>
+            </h1>
+
+            <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                Hi, I'm <strong class="text-white font-semibold">Furqon Azhari</strong>, a technical specialist focused on diesel engine generators, complex power distribution networks, and seamless power synchronization.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="#projects" class="px-8 py-4 rounded-2xl bg-sky-600 hover:bg-sky-500 text-white font-bold font-mono text-sm shadow-xl shadow-sky-600/30 transition-all hover:-translate-y-0.5">
+                    Explore Systems & Works
+                </a>
+                <a href="#contact" class="px-8 py-4 rounded-2xl glass-card text-slate-200 hover:text-white font-bold font-mono text-sm transition-all hover:-translate-y-0.5">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 border-t border-white/5 bg-[#070a12] relative overflow-hidden">
+        <!-- Aesthetic background lighting effect -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-950/80 border border-sky-500/30 text-sky-400 text-xs font-mono uppercase shadow-inner">
+                        About Me
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Ensuring uninterrupted power and flawless system synchronization.
+                    </h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        With extensive hands-on experience in high-capacity diesel generators, switchboards, load sharing, and automated synchronizing panels, I ensure continuous grid stability and operational safety under demanding conditions.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-2 font-mono text-xs">
+                        <div class="glass-card p-4 rounded-2xl">
+                            <div class="text-sky-400 font-bold text-xl mb-1">6+</div>
+                            <div class="text-slate-400 text-[11px]">Years Field Experience</div>
+                        </div>
+                        <div class="glass-card p-4 rounded-2xl">
+                            <div class="text-teal-400 font-bold text-xl mb-1">100+</div>
+                            <div class="text-slate-400 text-[11px]">Generator & Sync Jobs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-3xl p-8 border border-white/10 relative overflow-hidden flex flex-col items-center justify-center min-h-[360px] shadow-2xl group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-sky-500/15 via-indigo-500/5 to-teal-500/15"></div>
+                    <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-sky-400/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all"></div>
+                    
+                    <div class="text-center relative z-10 w-full flex flex-col items-center">
+                        <div class="w-36 h-36 mx-auto rounded-2xl bg-slate-800/90 border-2 border-sky-500/40 p-1.5 shadow-2xl relative overflow-hidden mb-5 group-hover:border-sky-400 transition-all">
+                            <img src="https://distronet.wordpress.com/wp-content/uploads/2026/08/whatsapp-image-2026-08-14-at-14.23.51.jpeg" alt="Furqon Azhari" class="w-full h-full object-cover rounded-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="absolute inset-0 hidden items-center justify-center text-2xl font-bold text-sky-300 bg-slate-900">PA</div>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-white tracking-wide">Furqon Azhari</h3>
+                        <p class="text-xs text-sky-400 font-mono mt-1 font-medium tracking-wider uppercase">Generator & Power Systems Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-950/80 border border-sky-500/30 text-sky-400 text-xs font-mono uppercase mb-3">
+                    Portfolio
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Key Projects & Overhauls</h2>
+                <p class="text-slate-400 max-w-lg mx-auto text-sm mt-2">Selected works in power generation, distribution, and synchronizing automation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1: Multi-Engine Synchronizing Panel -->
+                <div class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group">
+                    <div class="relative">
+                        <!-- Main Featured Display Image -->
+                        <div class="h-52 bg-slate-800/80 relative overflow-hidden border-b border-white/5">
+                            <img id="mainPanelImg" src="https://distronet.wordpress.com/wp-content/uploads/2026/08/whatsapp-image-2026-08-15-at-11.29.25-1.jpeg?auto=format&fit=crop&w=800&q=80" alt="Multi-Engine Synchronizing Panel - Main Desk" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/38bdf8?text=Multi-Engine+Synchronizing+Panel';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent"></div>
+                            <span id="panelCaption" class="absolute bottom-2 left-3 text-[10px] font-mono text-sky-300 bg-slate-950/85 px-2.5 py-1 rounded-lg border border-sky-500/30 shadow">
+                                🔌 Commissioning and testing of engine pump units at PT KSB Indonesia.
+                            </span>
+                        </div>
+
+                        <!-- Sample Images Thumbnail Navigation Bar -->
+                        <div class="p-2 bg-slate-950/70 border-b border-white/5 flex items-center gap-2 overflow-x-auto">
+                            <button type="button" onclick="changeGalleryImg('mainPanelImg', 'panelCaption', 'https://distronet.wordpress.com/wp-content/uploads/2026/08/img-20210117-wa0027.jpg?auto=format&fit=crop&w=800&q=80', 'Removing the MMDS module from the MAN engine for repair.', this)" class="thumb-btn flex-shrink-0 w-14 h-10 rounded-lg overflow-hidden border-2 border-sky-400 opacity-100 transition-all focus:outline-none" title="Main Control Desk">
+                                <img src="https://distronet.wordpress.com/wp-content/uploads/2026/08/img-20210117-wa0027.jpg?auto=format&fit=crop&w=150&q=80" alt="Sample 1" class="w-full h-full object-cover">
+                            </button>
+                            <button type="button" onclick="changeGalleryImg('mainPanelImg', 'panelCaption', 'https://distronet.wordpress.com/wp-content/uploads/2026/08/whatsapp-image-2026-08-15-at-11.29.27-2.jpeg?auto=format&fit=crop&w=150&q=80?auto=format&fit=crop&w=800&q=80', 'rewiring panel parameter Main Switch Board', this)" class="thumb-btn flex-shrink-0 w-14 h-10 rounded-lg overflow-hidden border border-white/20 opacity-60 hover:opacity-100 transition-all focus:outline-none" title="Internal Wiring">
+                                <img src="https://distronet.wordpress.com/wp-content/uploads/2026/08/whatsapp-image-2026-08-15-at-11.29.27-2.jpeg?auto=format&fit=crop&w=150&q=80" alt="Sample 2" class="w-full h-full object-cover">
+                            </button>
+                            <button type="button" onclick="changeGalleryImg('mainPanelImg', 'panelCaption', 'https://faeyzaazhar133-mlqfb.wordpress.com/wp-content/uploads/2026/08/img_1462.jpeg?auto=format&fit=crop&w=800&q=80', 'Genset Parallel Load Test Site', this)" class="thumb-btn flex-shrink-0 w-14 h-10 rounded-lg overflow-hidden border border-white/20 opacity-60 hover:opacity-100 transition-all focus:outline-none" title="3-MW Genset Parallel Testing">
+                                <img src="https://faeyzaazhar133-mlqfb.wordpress.com/wp-content/uploads/2026/08/img_1462.jpeg?auto=format&fit=crop&w=150&q=80" alt="Sample 3" class="w-full h-full object-cover">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3 font-mono text-[10px]">
+                            <span class="px-2.5 py-1 rounded-lg bg-sky-950/80 text-sky-300 border border-sky-500/30">commissioning</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-sky-950/80 text-sky-300 border border-sky-500/30">Auto-Sync</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 group-hover:text-sky-400 transition-colors">Diesel Engine Wiring and Commissioning</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">Diesel engine wiring and commissioning involves connecting the DC starting and control circuits (batteries, starter motor, and sensors) to the engine, followed by systematic pre-checks, first start, safety trials, and load testing to ensure safe, reliable operation</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Emergency ATS & SCADA Automation -->
+                <div class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group">
+                    <div class="relative">
+                        <!-- Main Featured Display Image -->
+                        <div class="h-52 bg-slate-800/80 relative overflow-hidden border-b border-white/5">
+                            <img id="mainAtsImg" src="https://distronet.wordpress.com/wp-content/uploads/2026/08/img-20211011-wa0018.jpg?auto=format&fit=crop&w=800&q=80" alt="Emergency ATS & SCADA Panel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/38bdf8?text=Emergency+ATS+%26+SCADA';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent"></div>
+                            <span id="atsCaption" class="absolute bottom-2 left-3 text-[10px] font-mono text-sky-300 bg-slate-950/85 px-2.5 py-1 rounded-lg border border-sky-500/30 shadow">
+                                🔌 troubleshoot engine can't not sync 
+                            </span>
+                        </div>
+
+                        <!-- Sample Images Thumbnail Navigation Bar -->
+                        <div class="p-2 bg-slate-950/70 border-b border-white/5 flex items-center gap-2 overflow-x-auto">
+                            <button type="button" onclick="changeGalleryImg('mainAtsImg', 'atsCaption', 'https://faeyzaazhar133-mlqfb.wordpress.com/wp-content/uploads/2026/08/whatsapp-image-2026-08-17-at-01.31.35.jpeg?auto=format&fit=crop&w=800&q=80', 'Calibration ATS Controller', this)" class="thumb-btn flex-shrink-0 w-14 h-10 rounded-lg overflow-hidden border-2 border-sky-400 opacity-100 transition-all focus:outline-none" title="ATS Controller">
+                                <img src="https://faeyzaazhar133-mlqfb.wordpress.com/wp-content/uploads/2026/08/whatsapp-image-2026-08-17-at-01.31.35.jpeg" alt="ATS Sample 1" class="w-full h-full object-cover">
+                            </button>
+                            <button type="button" onclick="changeGalleryImg('mainAtsImg', 'atsCaption', 'https://faeyzaazhar133-mlqfb.wordpress.com/wp-content/uploads/2026/08/whatsapp-image-2026-08-17-at-01.30.47.jpeg?auto=format&fit=crop&w=800&q=80', 'Monitoring parameter engine & generator real time with software interface', this)" class="thumb-btn flex-shrink-0 w-14 h-10 rounded-lg overflow-hidden border border-white/20 opacity-60 hover:opacity-100 transition-all focus:outline-none" title="SCADA HMI Display">
+                                <img src="https://faeyzaazhar133-mlqfb.wordpress.com/wp-content/uploads/2026/08/whatsapp-image-2026-08-17-at-01.30.47.jpeg?auto=format&fit=crop&w=150&q=80" alt="ATS Sample 2" class="w-full h-full object-cover">
+                            </button>
+                            <button type="button" onclick="changeGalleryImg('mainAtsImg', 'atsCaption', 'https://distronet.wordpress.com/wp-content/uploads/2026/08/img_0483.jpg?auto=format&fit=crop&w=800&q=80', 'Calibration of the emergency generator DCU on the AHTS vessel Bourbon.', this)" class="thumb-btn flex-shrink-0 w-14 h-10 rounded-lg overflow-hidden border border-white/20 opacity-60 hover:opacity-100 transition-all focus:outline-none" title="Transfer Test Field Site">
+                                <img src="https://distronet.wordpress.com/wp-content/uploads/2026/08/img_0483.jpg?auto=format&fit=crop&w=150&q=80" alt="ATS Sample 3" class="w-full h-full object-cover">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3 font-mono text-[10px]">
+                            <span class="px-2.5 py-1 rounded-lg bg-sky-950/80 text-sky-300 border border-sky-500/30">ATS Systems</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-sky-950/80 text-sky-300 border border-sky-500/30">SCADA & HMI</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 group-hover:text-sky-400 transition-colors">Emergency ATS & SCADA Automation</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">Integrated high-speed Automatic Transfer Switching with SCADA monitoring, active transfer interlocking, and remote power logging.</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: General Machinery Optimization: Advanced Engine ECU and ECM Calibration -->
+                <div class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group">
+                    <div class="relative">
+                        <!-- Main Featured Display Image -->
+                        <div class="h-52 bg-slate-800/80 relative overflow-hidden border-b border-white/5">
+                            <img id="mainEcuImg" src="https://distronet.wordpress.com/wp-content/uploads/2026/08/img_0210.jpg?auto=format&fit=crop&w=800&q=80" alt="Engine ECU & ECM Calibration Diagnostics" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/38bdf8?text=ECU+%26+ECM+Calibration';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent"></div>
+                            <span id="ecuCaption" class="absolute bottom-2 left-3 text-[10px] font-mono text-sky-300 bg-slate-950/85 px-2.5 py-1 rounded-lg border border-sky-500/30 shadow">
+                                🔌 Real-Time ECM Telemetry & Mapping
+                            </span>
+                        </div>
+
+                        <!-- Sample Images Thumbnail Navigation Bar -->
+                        <div class="p-2 bg-slate-950/70 border-b border-white/5 flex items-center gap-2 overflow-x-auto">
+                            <button type="button" onclick="changeGalleryImg('mainEcuImg', 'ecuCaption', 'https://distronet.wordpress.com/wp-content/uploads/2026/08/whatsapp-image-2026-08-15-at-11.29.24.jpeg?auto=format&fit=crop&w=800&q=80', 'Real-Time ECM Telemetry & Mapping', this)" class="thumb-btn flex-shrink-0 w-14 h-10 rounded-lg overflow-hidden border-2 border-sky-400 opacity-100 transition-all focus:outline-none" title="ECM Telemetry">
+                                <img src="https://distronet.wordpress.com/wp-content/uploads/2026/08/whatsapp-image-2026-08-15-at-11.29.24.jpeg?auto=format&fit=crop&w=150&q=80" alt="ECU Sample 1" class="w-full h-full object-cover">
+                            </button>
+                            <button type="button" onclick="changeGalleryImg('mainEcuImg', 'ecuCaption', 'https://distronet.wordpress.com/wp-content/uploads/2026/08/img_0207.jpg?auto=format&fit=crop&w=800&q=80', 'monitoring Ecm value', this)" class="thumb-btn flex-shrink-0 w-14 h-10 rounded-lg overflow-hidden border border-white/20 opacity-60 hover:opacity-100 transition-all focus:outline-none" title="Dyno Load Testing">
+                                <img src="https://distronet.wordpress.com/wp-content/uploads/2026/08/img_0207.jpg?auto=format&fit=crop&w=150&q=80" alt="ECU Sample 2" class="w-full h-full object-cover">
+                            </button>
+                            <button type="button" onclick="changeGalleryImg('mainEcuImg', 'ecuCaption', 'https://faeyzaazhar133-mlqfb.wordpress.com/wp-content/uploads/2026/08/whatsapp-image-2026-08-17-at-02.03.40.jpeg?auto=format&fit=crop&w=800&q=80', 'Service Main Board GCS Cummins', this)" class="thumb-btn flex-shrink-0 w-14 h-10 rounded-lg overflow-hidden border border-white/20 opacity-60 hover:opacity-100 transition-all focus:outline-none" title="Sensor Wiring">
+                                <img src="https://faeyzaazhar133-mlqfb.wordpress.com/wp-content/uploads/2026/08/whatsapp-image-2026-08-17-at-02.03.40.jpeg?auto=format&fit=crop&w=150&q=80" alt="ECU Sample 3" class="w-full h-full object-cover">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3 font-mono text-[10px]">
+                            <span class="px-2.5 py-1 rounded-lg bg-sky-950/80 text-sky-300 border border-sky-500/30">ECU & ECM Tuning</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-sky-950/80 text-sky-300 border border-sky-500/30">Fuel & Emissions</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 group-hover:text-sky-400 transition-colors">General Machinery Optimization: Advanced Engine ECU and ECM Calibration</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">Calibrated electronic control modules (ECU/ECM) across industrial diesel engines, optimizing air-fuel ratio maps, injection timing, and governor transient response for superior fuel efficiency and minimal emissions.</p>
+                    </div>
+                </div>
+
+                
+
+                <!-- Project Card 5: Engine Governor & AVR Tuning / Prime Diesel Engine Overhaul -->
+                <div class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group">
+                    <div class="relative">
+                        <!-- Main Featured Display Image -->
+                        <div class="h-52 bg-slate-800/80 relative overflow-hidden border-b border-white/5">
+                            <img id="mainGovernorImg" src="https://faeyzaazhar133-mlqfb.wordpress.com/wp-content/uploads/2026/08/avr-beslar.jpg?auto=format&fit=crop&w=800&q=80" alt="Engine Governor & AVR Tuning" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/38bdf8?text=Engine+Governor+%26+AVR+Tuning';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent"></div>
+                            <span id="governorCaption" class="absolute bottom-2 left-3 text-[10px] font-mono text-sky-300 bg-slate-950/85 px-2.5 py-1 rounded-lg border border-sky-500/30 shadow">
+                                🔌 seting avr Basler DECS-150 
+                            </span>
+                        </div>
+
+                        <!-- Sample Images Thumbnail Navigation Bar -->
+                        <div class="p-2 bg-slate-950/70 border-b border-white/5 flex items-center gap-2 overflow-x-auto">
+                            <button type="button" onclick="changeGalleryImg('mainGovernorImg', 'governorCaption', 'https://faeyzaazhar133-mlqfb.wordpress.com/wp-content/uploads/2026/08/avr-beslar.jpg?auto=format&fit=crop&w=800&q=80', 'Electronic Governor Calibration', this)" class="thumb-btn flex-shrink-0 w-14 h-10 rounded-lg overflow-hidden border-2 border-sky-400 opacity-100 transition-all focus:outline-none" title="AVR Calibration">
+                                <img src="https://faeyzaazhar133-mlqfb.wordpress.com/wp-content/uploads/2026/08/avr-beslar.jpg" alt="Governor Sample 1" class="w-full h-full object-cover">
+                            </button>
+                            <button type="button" onclick="changeGalleryImg('mainGovernorImg', 'governorCaption', 'https://faeyzaazhar133-mlqfb.wordpress.com/wp-content/uploads/2026/08/test-load.jpg?auto=format&fit=crop&w=800&q=80', 'Full Load Test engine after service', this)" class="thumb-btn flex-shrink-0 w-14 h-10 rounded-lg overflow-hidden border border-white/20 opacity-60 hover:opacity-100 transition-all focus:outline-none" title="Transient Load Test">
+                                <img src="https://faeyzaazhar133-mlqfb.wordpress.com/wp-content/uploads/2026/08/test-load.jpg?auto=format&fit=crop&w=150&q=80" alt="Governor Sample 2" class="w-full h-full object-cover">
+                            </button>
+                            <button type="button" onclick="changeGalleryImg('mainGovernorImg', 'governorCaption', 'https://distronet.wordpress.com/wp-content/uploads/2026/08/img_20240103_141050.jpg?auto=format&fit=crop&w=800&q=80', 'install & wiring electric governor', this)" class="thumb-btn flex-shrink-0 w-14 h-10 rounded-lg overflow-hidden border border-white/20 opacity-60 hover:opacity-100 transition-all focus:outline-none" title="Actuator & Sensor Wiring">
+                                <img src="https://distronet.wordpress.com/wp-content/uploads/2026/08/img_20240103_141050.jpg?auto=format&fit=crop&w=150&q=80" alt="Governor Sample 3" class="w-full h-full object-cover">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3 font-mono text-[10px]">
+                            <span class="px-2.5 py-1 rounded-lg bg-sky-950/80 text-sky-300 border border-sky-500/30">Diesel Engine</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-sky-950/80 text-sky-300 border border-sky-500/30">AVR Calibration</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 group-hover:text-sky-400 transition-colors">Prime Diesel Engine Overhaul & Testing</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">Conducted mechanical fuel injector timing, electronic governor configuration, and AVR excitation response tuning for critical standby power units.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 border-t border-white/5 bg-[#070a12]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-950/80 border border-sky-500/30 text-sky-400 text-xs font-mono uppercase mb-3">
+                    Expertise
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Core Competencies</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 font-mono text-xs">
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <div class="text-sky-400 font-bold text-base mb-1">Diesel Engine Generators</div>
+                    <div class="text-slate-400 text-[11px]">Prime & Emergency Gensets, Governors, Fuel Injection, AVR Tuning & Maintenance</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <div class="text-teal-400 font-bold text-base mb-1">Power Distribution</div>
+                    <div class="text-slate-400 text-[11px]">Switchboards, ACBs/MCBs, Protection Relays, Busbar Calculation & Load Management</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <div class="text-indigo-400 font-bold text-base mb-1">Power Synchronization</div>
+                    <div class="text-slate-400 text-[11px]">Auto-Synchronizers, Phase Angle Matching, Dead Bus Closing & Active Load Sharing</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <div class="text-purple-400 font-bold text-base mb-1">ECU & ECM Calibration</div>
+                    <div class="text-slate-400 text-[11px]">Electronic Control Modules, Fuel Injection Mapping, Diagnostic Telemetry & Emissions Optimization</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 border-t border-white/5">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 shadow-2xl border border-white/10 text-center">
+                <h2 class="text-3xl font-extrabold text-white tracking-tight mb-3">Let's Work Together</h2>
+                <p class="text-slate-400 text-sm mb-8 font-mono">Have a power systems project or need generator consultation? Send a message.</p>
+
+                <form id="contactForm" action="mailto:purkon.azh@pelican-ms.com" method="POST" enctype="text/plain" class="space-y-4 text-left font-mono text-xs">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-slate-300 font-bold mb-1.5">NAME</label>
+                            <input type="text" name="name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-white/10 bg-slate-900 text-white focus:outline-none focus:border-sky-500">
+                        </div>
+                        <div>
+                            <label class="block text-slate-300 font-bold mb-1.5">EMAIL</label>
+                            <input type="email" name="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-white/10 bg-slate-900 text-white focus:outline-none focus:border-sky-500">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 font-bold mb-1.5">MESSAGE</label>
+                        <textarea name="message" rows="4" required placeholder="Hello Furqon, I'd like to discuss..." class="w-full px-4 py-3 rounded-xl border border-white/10 bg-slate-900 text-white focus:outline-none focus:border-sky-500 font-sans"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold font-mono text-sm shadow-lg shadow-sky-600/30 transition-all">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#04060b] text-slate-400 py-12 border-t border-white/5 text-xs font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>&copy; <span id="year">2026</span> Furqon Azhari. All rights reserved.</div>
+            <div class="flex items-center gap-4 text-sky-400">
+               
+                
+               
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Badges Container (WhatsApp & Email) -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3 font-mono">
+        <!-- WhatsApp Badge -->
+        <a href="https://wa.me/6282125091665?text=Halo%20Furqon,%20saya%20ingin%20berkonsultasi%20mengenai%20proyek%20power%20system" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-3 rounded-2xl glass-card bg-slate-900/90 border border-emerald-500/40 text-white shadow-2xl shadow-emerald-500/20 hover:border-emerald-400 hover:scale-105 hover:shadow-emerald-500/40 transition-all duration-300 group">
+            <div class="relative flex items-center justify-center w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400">
+                <span class="absolute -top-1 -right-1 flex h-2.5 w-2.5">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                </span>
+                <!-- WhatsApp Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+            </div>
+            <div class="hidden sm:flex flex-col text-left">
+                <span class="text-[10px] text-emerald-400 font-semibold uppercase tracking-wider">WhatsApp</span>
+                <span class="text-xs text-slate-200 font-medium">Chat via WhatsApp</span>
+            </div>
+        </a>
+
+        <!-- Email Badge -->
+        <a href="mailto:purkon.azh@pelican-ms.com" class="flex items-center gap-3 px-4 py-3 rounded-2xl glass-card bg-slate-900/90 border border-sky-500/40 text-white shadow-2xl shadow-sky-500/20 hover:border-sky-400 hover:scale-105 hover:shadow-sky-500/40 transition-all duration-300 group">
+            <div class="relative flex items-center justify-center w-8 h-8 rounded-xl bg-sky-500/20 text-sky-400">
+                <span class="absolute -top-1 -right-1 flex h-2.5 w-2.5">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-sky-500"></span>
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+            </div>
+            <div class="hidden sm:flex flex-col text-left">
+                <span class="text-[10px] text-sky-400 font-semibold uppercase tracking-wider">Direct Email</span>
+                <span class="text-xs text-slate-200 font-medium">purkon.azh@pelican-ms.com</span>
+            </div>
+        </a>
+    </div>
+
+    <script>
+        function changeGalleryImg(mainImgId, captionId, src, caption, btnEl) {
+            const mainImg = document.getElementById(mainImgId);
+            const captionEl = document.getElementById(captionId);
+            
+            if (mainImg) mainImg.src = src;
+            if (captionEl) captionEl.textContent = '🔌 ' + caption;
+
+            // Highlight selected thumbnail border within the parent thumbnail bar
+            if (btnEl && btnEl.parentElement) {
+                const buttons = btnEl.parentElement.querySelectorAll('.thumb-btn');
+                buttons.forEach(btn => {
+                    btn.classList.remove('border-2', 'border-sky-400', 'opacity-100');
+                    btn.classList.add('border', 'border-white/20', 'opacity-60');
+                });
+
+                btnEl.classList.remove('border-white/20', 'opacity-60');
+                btnEl.classList.add('border-2', 'border-sky-400', 'opacity-100');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearEl = document.getElementById('year');
+            if(yearEl) yearEl.textContent = new Date().getFullYear();
+            
+            // Note: Prevent default behavior removed so Formspree submission works natively
+        });
+    </script>
+</body>
+</html>
